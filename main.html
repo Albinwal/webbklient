@@ -2,19 +2,46 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
-		<title>Example document</title>
+		<title>Uppgift 1.1</title>
 	</head>
 		<body>
     <h1>Begrepp</h1>
     <h2>Doctype</h2>
-		<p>&lt;!DOCTYPE&gt; är en instruktion till webbläsaren om vilken version av HTML en sida är skriven i, i tidigare HTML versioner fanns tre olika sätt att skriva det i men har nu blivit så simpelt som exempelvis &lt;!DOCTYPE&gt; html </p>
+		<p><code>&lt;!DOCTYPE&gt;</code> är en instruktion till webbläsaren om vilken
+		version av HTML en sida är skriven i, i tidigare HTML versioner fanns flera olika
+		sätt att skriva det på men har nu blivit så simpelt som exempelvis
+		<code>&lt;!DOCTYPE&gt; html</code>  När du lägger till en doctype känner webbläsaren
+		till att du vill använda ett striktare standardläge, vilket säkerställer att webbsidan
+		visas med konsekvent formatering och layout på alla moderna webbläsare. Webbläsaren bryr sig inte ens
+		vilken doctype du använder (med några få undantag). I stället kontrollerar den helt enkelt att
+		du har någon doctype. HTML5-doctypen är helt enkelt den kortaste giltiga doctypen,
+		så den triggrar alltid standardläget.</p>
     <h2>Teckenkod</h2>
-		<p>Teckenkoder eller charset är den typ av tecken som sida använder, olika språk i världen kan ha olika tecken. dessa har alla en typ av namn, den allra vanligaste idag är UTF-8 den kan t.ex. hantera att du använder Å Ä och Ö utan att behöva definiera hur dessa ska se ut för exempelvis ett program </p>
+		<p>Teckenkodningen är standarden som berättar för en dator hur man konverterar
+		din text till en sekvens av byte när den lagras i en fil och hur den konverteras
+		tillbaka igen när filen öppnas. Av historiska skäl finns det många olika
+		teckenkodningar i världen. Idag använder nästan alla engelska webbplatser
+		en kodning som heter UTF-8, vilken är kompakt, snabb och stöder alla icke-engelska
+		karaktärer du någonsin kommer behöva. </p>
     <h2>Språk</h2>
-		<p>&lt;!DOCTYPE&gt; är en instruktion till webbläsaren om vilken version av HTML en sida är skriven i </p>
+		<p>Det anses vara bra stil att ange din webbsidas naturliga språk. Denna informationen
+		är ibland användbar för andra människor, till exempel kan sökmotorer använda den till
+		att filtrera sökresultat så att de bara innehåller sidor som matchar sökarens språk.
+		För att ange språket för något innehåll använder du lang attributet på något element,
+		tillsammans med lämplig språkkod. Exempelvis <code>&lt;html lang="en"&gt;</code> som är
+		vanlig engelska. </p>
     <h2>Validering</h2>
-		<p>&lt;!DOCTYPE&gt; är en instruktion till webbläsaren om vilken version av HTML en sida är skriven i </p>
+		<p> Validering handlar om att man ser till att koden följer den standard som man bör göra för exempelvis HTML5.
+		Kod går ibland för en webbläsare att läsa trots att det finns fel/saknas en del av kod.
+		Ett valideringsverktyg kan hitta missade saker som inte överensstämmer med
+		rekommenderade standarder för HTML5, även om det inte syns direkt ihop med en webbläsare.
+		Här är några potentiella problem som en validerare kan fånga upp: <br>
+		• Saknade obligatoriska element (till exempel <code>&lt;title&gt;</code> -elementet) <br>
+		• En start tagg utan matchande slutkoder <br>
+		• Felaktigt indelade taggar <br>
+		• Etiketter med saknade attribut (till exempel ett <code>&lt;img&gt;</code> -element utan <code>src</code> attribut) <br>
+		• Element eller innehåll på fel plats (till exempel text som placeras direkt i avsnittet <code>&lt;head&gt;</code>) </p>
     <h2>Hur ett HTML-dokument är uppbyggt</h2>
-		<p>&lt;!DOCTYPE&gt; är en instruktion till webbläsaren om vilken version av HTML en sida är skriven i </p>
+		<p> </p>
 		</body>
 </html>
