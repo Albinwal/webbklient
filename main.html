@@ -24,7 +24,7 @@
 		en kodning som heter UTF-8, vilken är kompakt, snabb och stöder alla icke-engelska
 		karaktärer du någonsin kommer behöva. </p>
     <h2>Språk</h2>
-		<p>Det anses vara bra stil att ange din webbsidas naturliga språk. Denna informationen
+		<p>Det anses vara bra stil att ange din webbsidas naturliga språk. Denna information
 		är ibland användbar för andra människor, till exempel kan sökmotorer använda den till
 		att filtrera sökresultat så att de bara innehåller sidor som matchar sökarens språk.
 		För att ange språket för något innehåll använder du lang attributet på något element,
@@ -42,6 +42,74 @@
 		• Etiketter med saknade attribut (till exempel ett <code>&lt;img&gt;</code> -element utan <code>src</code> attribut) <br>
 		• Element eller innehåll på fel plats (till exempel text som placeras direkt i avsnittet <code>&lt;head&gt;</code>) </p>
     <h2>Hur ett HTML-dokument är uppbyggt</h2>
-		<p> </p>
-		</body>
-</html>
+		<p>Ett HTML-dokument är uppbyggt med först en <code>&lt;HTML&gt;</code> tagg berättar för exempelvis en
+		webbläsare att det är en HTML-märkt text. Därefter kommer dokumenthuvudet <code>&lt;HEAD&gt;</code> och slutligen <code>&lt;BODY&gt;</code>
+		som innehåller brödtext samtliga (HTML,HEAD och BODY) avslutas med sitt slutmärksord vilket är taggen med ett snedstreck innan: <code>&lt;/HTML&gt;</code>
+		<code>&lt;/HEAD&gt;</code>, <code>&lt;/BODY&gt;</code>. Utöver dessa kan man ha en bl.a. en titel som bestämmer vad som står i själva webbläsarens
+		flik/fönster och dessa görs genom <code>&lt;title&gt;</code> och här emellanen text, detta dokument som du läser nu har titeln:
+		Uppgift 1.1 och stängs därefter med <code>&lt;/title&gt;</code>. Grunden är dock html-, head- och bodytaggarna som ett html-dokument är uppbyggt av.</p>
+
+		<h1>Beskrivning och exempel på vanliga taggar</h1>
+
+		<h4>Vi börjar med <code>&lt;BODY&gt;</code></h4>
+			<p>Bodyn innehåller brödtext som finns på sidan, dvs det som ni läser här just nu är skrivet i detta HTML-dokuments body. Här är ett exempel
+			på hur body kan se ut om ni skulle skriva en själva:</p> <br>
+			<code>&lt;BODY&gt; <br>
+						&lt;h1&gt; Sagan om den onde den gode och den fule&lt;/h1&gt;<br>
+						&lt;p&gt; Det var en gång tre bröder som gjorde si och så bla bla....&lt;/p&gt; <br>
+						&lt;/BODY&gt;</code><br>
+						<p> Detta hade sett ut som det mellan strecken nedanför här i en webbläsare:<br>
+							------------------------------------------------------------------------------
+									<h1> Sagan om den onde den gode och den fule</h1>
+										<p> Det var en gång tre bröder som gjorde si och så bla bla....</p>
+------------------------------------------------------------------------------
+
+		<h4>HEAD</h4>
+		<p> <code>&lt;HEAD&gt;</code> är ett element som kan innehålla dessa element:<br>
+			<code>&lt;title&gt;<br>
+			&lt;style&gt;<br>
+			&lt;base&gt;<br>
+			&lt;link&gt;<br>
+			&lt;meta&gt;<br>
+			&lt;script&gt;<br>
+			&lt;noscript&gt;<br></code>
+			Denna sida har t.ex. taggen <code>&lt;title&gt;Uppgift 1.1&lt;/title&gt;</code> i sitt <code>&lt;HEAD&gt;</code> så tittar
+			ni högst upp i webbläsarens fönster nu så ser ni att det står "Uppgift 1.1" för denna flik.
+
+			<h4>HTML</h4>
+			<p>HTML taggen används direkt efter !DOCTYPE taggen i början av ett html-dokument och innehåller samtliga andra HTML-element
+				 som webbsidan använder. Exempel på hur ett fullständigt HTML dokument hade sett ut:<br>
+					<code>&lt;HTML lang="eng"&gt;<br>
+							&lt;HEAD&gt;<br>
+							&lt;title&gt;uppgift 1.1&lt;/title&gt;<br>
+							&lt;/HEAD&gt;<br>
+							&lt;BODY&gt; <br>
+							&lt;h1&gt; Sagan om den onde den gode och den fule&lt;/h1&gt;<br>
+							&lt;p&gt; Det var en gång tre bröder som gjorde si och så bla bla....&lt;/p&gt; <br>
+							&lt;/BODY&gt;<br>
+							&lt;/HTML&gt;</code>
+			<h4>Title</h4>
+				<p>Som beskrivet ovan bör ni redan nu ha fått ett humm om hur <code>&lt;title&gt;</code> används, den berättar för exempelvis en webbläsare
+					 vad som ska stå i fliken/fönstret som html-dokumentet öppnas i och placeras inom <code>&lt;head&gt;</code>-taggen
+			<h2>Metataggar</h2>
+				<p>Taggen <meta> ger metadata om HTML-dokumentet. Metadata kommer inte att visas på sidan, men kommer att vara analyserbart av datorer/maskiner.
+					 Metadata kan användas av webbläsare (för att berätta hur man visar en del av dokumentet exempelvis), sökmotorer (nyckelord) eller andra webbtjänster.
+					 <h4>Metataggar med name-attribut</h4>
+					 <p>Dessa används inom &lt;HEAD&gt;-elementet och dessa är de jag tänkte exemplifiera nedan: author, description, generator, keywords, robots och kan se ut enligt följande:<br><br>
+						 <code>&lt;meta name="keywords" content="HTML, CSS, XML, XHTML, JavaScript"&gt;</code> : Över 80% av alla onlinehandlingar börjar med en sökfråga. Du bläddrar till en sökmotor
+							 och du fyller i vissa nyckelord som matchar det du söker. Därför är det så viktigt att sätta relevanta och korrekta nyckelord i dina metataggar i källan till din webbsida.<br><br>
+							<code>&lt;meta name="description" content="Free Web tutorials on HTML and CSS"&gt;</code> : Nästan alla stora sökmotorer som Yahoo, Google, Fast och Altavista använder din description-tagg.
+							Du har en direkt ingång till hur folk kommer att se din webbplats i listan över resultat. Och eftersom du kontrollerar detta kan du påverka klickbeteendet.<br><br>
+							<code>&lt;meta name="author" content="Albin Walheim"&gt;</code> : Hur kan man ge credit/ansvar till den person som har gjort din hemsida? Du använder den så kallade AUTHOR-metataggen.
+							Det finns också Content Management Systems (CMS) som kommer att ange namnet på den faktiska personen som redigerar sidan. Om det används så är det lätt att hitta rätt
+							person som ansvarar för en webbsida.<br><br>
+							<code>&lt;meta name="robots" content="index, follow"&gt;</code> : Hur förklarar du för en en sökmotor att du bara vill att den ska indexera den första sidan på din webbplats eller
+							att det är tillåtet att indexera hela webbplatsen. Jo då använder du en specifik HTML-metakod, den så kallade robots-taggen. Just denna robots-tagg förklarar att det går bra att
+							indexera hela webbsidan och med follow även alla andra av dina sidor<br><br>
+							<code>&lt;meta name="generator" content="ATOM"&gt;</code> : Hur lägger du till en beskrivning av det program du använde för att bygga din webbplats? Du använder den så kallade meta name
+							 generator-taggen, även känd som formaterings taggen. Jag har använt mig av ATOM därför ser min ut som denna generatortaggen.<br><br>
+							<code>&lt;meta http-equiv="refresh" content="30"&gt;</code> : http-equiv-taggen finns det lite olika ut av men den kan exempelvis berätta för en webbläsare hur ofta en sida ska "refreshas" eller uppdateras görs då automatiskt
+
+
+
+			</html>
