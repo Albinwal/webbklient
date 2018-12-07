@@ -5,79 +5,80 @@
 		<title>Uppgift 1.1</title>
 	</head>
 		<body>
-    <h1>Begrepp</h1>
-    <h2>Doctype</h2>
-		<p><code>&lt;!DOCTYPE&gt;</code> är en instruktion till webbläsaren om vilken
-		version av HTML en sida är skriven i, i tidigare HTML versioner fanns flera olika
-		sätt att skriva det på men har nu blivit så simpelt som exempelvis
-		<code>&lt;!DOCTYPE&gt; html</code>  När du lägger till en doctype känner webbläsaren
-		till att du vill använda ett striktare standardläge, vilket säkerställer att webbsidan
-		visas med konsekvent formatering och layout på alla moderna webbläsare. Webbläsaren bryr sig inte ens
-		vilken doctype du använder (med några få undantag). I stället kontrollerar den helt enkelt att
-		du har någon doctype. HTML5-doctypen är helt enkelt den kortaste giltiga doctypen,
-		så den triggrar alltid standardläget.</p>
-    <h2>Teckenkod</h2>
-		<p>Teckenkodningen är standarden som berättar för en dator hur man konverterar
-		din text till en sekvens av byte när den lagras i en fil och hur den konverteras
-		tillbaka igen när filen öppnas. Av historiska skäl finns det många olika
-		teckenkodningar i världen. Idag använder nästan alla engelska webbplatser
-		en kodning som heter UTF-8, vilken är kompakt, snabb och stöder alla icke-engelska
-		karaktärer du någonsin kommer behöva. </p>
-    <h2>Språk</h2>
-		<p>Det anses vara bra stil att ange din webbsidas naturliga språk. Denna information
-		är ibland användbar för andra människor, till exempel kan sökmotorer använda den till
-		att filtrera sökresultat så att de bara innehåller sidor som matchar sökarens språk.
-		För att ange språket för något innehåll använder du lang attributet på något element,
-		tillsammans med lämplig språkkod. Exempelvis <code>&lt;html lang="en"&gt;</code> som är
-		vanlig engelska. </p>
-    <h2>Validering</h2>
-		<p> Validering handlar om att man ser till att koden följer den standard som man bör göra för exempelvis HTML5.
-		Kod går ibland för en webbläsare att läsa trots att det finns fel/saknas en del av kod.
-		Ett valideringsverktyg kan hitta missade saker som inte överensstämmer med
-		rekommenderade standarder för HTML5, även om det inte syns direkt ihop med en webbläsare.
-		Här är några potentiella problem som en validerare kan fånga upp: <br>
-		• Saknade obligatoriska element (till exempel <code>&lt;title&gt;</code> -elementet) <br>
-		• En start tagg utan matchande slutkoder <br>
-		• Felaktigt indelade taggar <br>
-		• Etiketter med saknade attribut (till exempel ett <code>&lt;img&gt;</code> -element utan <code>src</code> attribut) <br>
-		• Element eller innehåll på fel plats (till exempel text som placeras direkt i avsnittet <code>&lt;head&gt;</code>) </p>
-    <h2>Hur ett HTML-dokument är uppbyggt</h2>
-		<p>Ett HTML-dokument är uppbyggt med först en <code>&lt;HTML&gt;</code> tagg berättar för exempelvis en
-		webbläsare att det är en HTML-märkt text. Därefter kommer dokumenthuvudet <code>&lt;HEAD&gt;</code> och slutligen <code>&lt;BODY&gt;</code>
-		som innehåller brödtext samtliga (HTML,HEAD och BODY) avslutas med sitt slutmärksord vilket är taggen med ett snedstreck innan: <code>&lt;/HTML&gt;</code>
-		<code>&lt;/HEAD&gt;</code>, <code>&lt;/BODY&gt;</code>. Utöver dessa kan man ha en bl.a. en titel som bestämmer vad som står i själva webbläsarens
-		flik/fönster och dessa görs genom <code>&lt;title&gt;</code> och här emellanen text, detta dokument som du läser nu har titeln:
-		Uppgift 1.1 och stängs därefter med <code>&lt;/title&gt;</code>. Grunden är dock html-, head- och bodytaggarna som ett html-dokument är uppbyggt av.</p>
+			<h1>En simpel guide till HTML5</h1>
+    		<h1>Begrepp</h1>
+    			<h2>Doctype</h2>
+					<p><code>&lt;!DOCTYPE&gt;</code> är en instruktion till webbläsaren om vilken
+								version av HTML en sida är skriven i, i tidigare HTML versioner fanns flera olika
+								sätt att skriva det på men har nu blivit så simpelt som exempelvis
+								<code>&lt;!DOCTYPE&gt; html</code>  När du lägger till en doctype känner webbläsaren
+								till att du vill använda ett striktare standardläge, vilket säkerställer att webbsidan
+								visas med konsekvent formatering och layout på alla moderna webbläsare. Webbläsaren bryr sig inte ens
+								vilken doctype du använder (med några få undantag). I stället kontrollerar den helt enkelt att
+								du har någon doctype. HTML5-doctypen är helt enkelt den kortaste giltiga doctypen,
+								så den triggrar alltid standardläget.</p>
+    			<h2>Teckenkod</h2>
+					<p>Teckenkodningen är standarden som berättar för en dator hur man konverterar
+							din text till en sekvens av byte när den lagras i en fil och hur den konverteras
+							tillbaka igen när filen öppnas. Av historiska skäl finns det många olika
+							teckenkodningar i världen. Idag använder nästan alla engelska webbplatser
+							en kodning som heter UTF-8, vilken är kompakt, snabb och stöder alla icke-engelska
+							karaktärer du någonsin kommer behöva. </p>
+    			<h2>Språk</h2>
+					<p>Det anses vara bra stil att ange din webbsidas naturliga språk. Denna information
+						är ibland användbar för andra människor, till exempel kan sökmotorer använda den till
+						att filtrera sökresultat så att de bara innehåller sidor som matchar sökarens språk.
+						För att ange språket för något innehåll använder du lang attributet på något element,
+						tillsammans med lämplig språkkod. Exempelvis <code>&lt;html lang="en"&gt;</code> som är
+						vanlig engelska. </p>
+			    <h2>Validering</h2>
+					<p> Validering handlar om att man ser till att koden följer den standard som man bör göra för exempelvis HTML5.
+						Kod går ibland för en webbläsare att läsa trots att det finns fel/saknas en del av kod.
+						Ett valideringsverktyg kan hitta missade saker som inte överensstämmer med
+						rekommenderade standarder för HTML5, även om det inte syns direkt ihop med en webbläsare.
+						Här är några potentiella problem som en validerare kan fånga upp: <br>
+						• Saknade obligatoriska element (till exempel <code>&lt;title&gt;</code> -elementet) <br>
+						• En start tagg utan matchande slutkoder <br>
+						• Felaktigt indelade taggar <br>
+						• Etiketter med saknade attribut (till exempel ett <code>&lt;img&gt;</code> -element utan <code>src</code> attribut) <br>
+						• Element eller innehåll på fel plats (till exempel text som placeras direkt i avsnittet <code>&lt;head&gt;</code>) </p>
+			    <h2>Hur ett HTML-dokument är uppbyggt</h2>
+					<p>Ett HTML-dokument är uppbyggt med först en <code>&lt;HTML&gt;</code> tagg berättar för exempelvis en
+						webbläsare att det är en HTML-märkt text. Därefter kommer dokumenthuvudet <code>&lt;HEAD&gt;</code> och slutligen <code>&lt;BODY&gt;</code>
+						som innehåller brödtext samtliga (HTML,HEAD och BODY) avslutas med sitt slutmärksord vilket är taggen med ett snedstreck innan: <code>&lt;/HTML&gt;</code>
+						<code>&lt;/HEAD&gt;</code>, <code>&lt;/BODY&gt;</code>. Utöver dessa kan man ha en bl.a. en titel som bestämmer vad som står i själva webbläsarens
+						flik/fönster och dessa görs genom <code>&lt;title&gt;</code> och här emellanen text, detta dokument som du läser nu har titeln:
+						Uppgift 1.1 och stängs därefter med <code>&lt;/title&gt;</code>. Grunden är dock html-, head- och bodytaggarna som ett html-dokument är uppbyggt av.</p>
 
-		<h1>Beskrivning och exempel på vanliga taggar</h1>
+					<h1>Beskrivning och exempel på vanliga taggar</h1>
 
-		<h4>Vi börjar med <code>&lt;BODY&gt;</code></h4>
-			<p>Bodyn innehåller brödtext som finns på sidan, dvs det som ni läser här just nu är skrivet i detta HTML-dokuments body. Här är ett exempel
-			på hur body kan se ut om ni skulle skriva en själva:</p> <br>
-			<code>&lt;BODY&gt; <br>
+					<h4>Vi börjar med <code>&lt;BODY&gt;</code></h4>
+					<p>Bodyn innehåller brödtext som finns på sidan, dvs det som ni läser här just nu är skrivet i detta HTML-dokuments body. Här är ett exempel
+						på hur body kan se ut om ni skulle skriva en själva:</p> <br>
+						<code>&lt;BODY&gt; <br>
 						&lt;h1&gt; Sagan om den onde den gode och den fule&lt;/h1&gt;<br>
 						&lt;p&gt; Det var en gång tre bröder som gjorde si och så bla bla....&lt;/p&gt; <br>
 						&lt;/BODY&gt;</code><br>
 						<p> Detta hade sett ut som det mellan strecken nedanför här i en webbläsare:<br>
 							------------------------------------------------------------------------------
-									<h1> Sagan om den onde den gode och den fule</h1>
-										<p> Det var en gång tre bröder som gjorde si och så bla bla....</p>
-------------------------------------------------------------------------------
+							<h1> Sagan om den onde den gode och den fule</h1>
+							Det var en gång tre bröder som gjorde si och så bla bla....</p>
+							------------------------------------------------------------------------------
 
-		<h4>HEAD</h4>
-		<p> <code>&lt;HEAD&gt;</code> är ett element som kan innehålla dessa element:<br>
-			<code>&lt;title&gt;<br>
-			&lt;style&gt;<br>
-			&lt;base&gt;<br>
-			&lt;link&gt;<br>
-			&lt;meta&gt;<br>
-			&lt;script&gt;<br>
-			&lt;noscript&gt;<br></code>
-			Denna sida har t.ex. taggen <code>&lt;title&gt;Uppgift 1.1&lt;/title&gt;</code> i sitt <code>&lt;HEAD&gt;</code> så tittar
-			ni högst upp i webbläsarens fönster nu så ser ni att det står "Uppgift 1.1" för denna flik.
+					<h4>HEAD</h4>
+					<p> <code>&lt;HEAD&gt;</code> är ett element som kan innehålla dessa element:<br>
+						<code>&lt;title&gt;<br>
+						&lt;style&gt;<br>
+						&lt;base&gt;<br>
+						&lt;link&gt;<br>
+						&lt;meta&gt;<br>
+						&lt;script&gt;<br>
+						&lt;noscript&gt;<br></code>
+						Denna sida har t.ex. taggen <code>&lt;title&gt;Uppgift 1.1&lt;/title&gt;</code> i sitt <code>&lt;HEAD&gt;</code> så tittar
+						ni högst upp i webbläsarens fönster nu så ser ni att det står "Uppgift 1.1" för denna flik.
 
-			<h4>HTML</h4>
-			<p>HTML taggen används direkt efter !DOCTYPE taggen i början av ett html-dokument och innehåller samtliga andra HTML-element
+					<h4>HTML</h4>
+					<p>HTML taggen används direkt efter !DOCTYPE taggen i början av ett html-dokument och innehåller samtliga andra HTML-element
 				 som webbsidan använder. Exempel på hur ett fullständigt HTML dokument hade sett ut:<br>
 					<code>&lt;HTML lang="eng"&gt;<br>
 							&lt;HEAD&gt;<br>
@@ -92,7 +93,7 @@
 				<p>Som beskrivet ovan bör ni redan nu ha fått ett humm om hur <code>&lt;title&gt;</code> används, den berättar för exempelvis en webbläsare
 					 vad som ska stå i fliken/fönstret som html-dokumentet öppnas i och placeras inom <code>&lt;head&gt;</code>-taggen
 			<h2>Metataggar</h2>
-				<p>Taggen <meta> ger metadata om HTML-dokumentet. Metadata kommer inte att visas på sidan, men kommer att vara analyserbart av datorer/maskiner.
+				<p>Taggen &lt;meta&gt; ger metadata om HTML-dokumentet. Metadata kommer inte att visas på sidan, men kommer att vara analyserbart av datorer/maskiner.
 					 Metadata kan användas av webbläsare (för att berätta hur man visar en del av dokumentet exempelvis), sökmotorer (nyckelord) eller andra webbtjänster.
 					 <h4>Metataggar med name-attribut</h4>
 					 <p>Dessa används inom &lt;HEAD&gt;-elementet och dessa är de jag tänkte exemplifiera nedan: author, description, generator, keywords, robots och kan se ut enligt följande:<br><br>
@@ -108,8 +109,157 @@
 							indexera hela webbsidan och med follow även alla andra av dina sidor<br><br>
 							<code>&lt;meta name="generator" content="ATOM"&gt;</code> : Hur lägger du till en beskrivning av det program du använde för att bygga din webbplats? Du använder den så kallade meta name
 							 generator-taggen, även känd som formaterings taggen. Jag har använt mig av ATOM därför ser min ut som denna generatortaggen.<br><br>
-							<code>&lt;meta http-equiv="refresh" content="30"&gt;</code> : http-equiv-taggen finns det lite olika ut av men den kan exempelvis berätta för en webbläsare hur ofta en sida ska "refreshas" eller uppdateras görs då automatiskt
+							<code>&lt;meta http-equiv="refresh" content="30"&gt;</code> : http-equiv-taggen finns det lite olika ut av men den kan exempelvis berätta för en webbläsare hur ofta en sida ska "refreshas"
+							 eller uppdateras görs då automatiskt<br>
+			<h2 id = "textaggar">Texttaggar</h2>
+				<p>Här ska vi kika på texttaggarna blockquote, h1-h6, p, pre och span.</p> <br>
+				<code> &lt;blockquote cite="http://www.worldwildlife.org/who/index.html"&gt;
+					For 50 years, WWF has been protecting the future of nature. The world's leading conservation organization, WWF works in 100 countries and is supported by 1.2 million members in the United States and close
+ 					to 5 million globally.
+					&lt;/blockquote&gt;</code> : Taggen blockquote anger ett avsnitt som citerats från en annan källa.<br><br>
+				<p> i kod syns endast texten som citerats men vid en inspektering av webbsidan kan man se vart citeringen är ifrån och raden startar en bit in som ett blockcitat likt nedan:
+				<blockquote cite="http://www.worldwildlife.org/who/index.html">
+						For 50 years, WWF has been protecting the future of nature. The world's leading conservation organization, WWF works in 100 countries and is supported by 1.2 million members in the United States and close
+	 					to 5 million globally.
+					</blockquote>
+					<p>Taggarna &lt;h1&gt; till &lt;h6&gt; används för att definiera HTML-rubriker &lt;h1&gt; definierar den viktigaste rubriken. &lt;h6&gt; definierar den minst viktiga rubriken storleken är den
+										tydligaste skillnaden, här nedan ser ni hur de olika ser ut när man använder de.<p>
+								<h1>This is heading 1</h1>
+								<h2>This is heading 2</h2>
+								<h3>This is heading 3</h3>
+								<h4>This is heading 4</h4>
+								<h5>This is heading 5</h5>
+								<h6>This is heading 6</h6>
+								Kodraderna för att skriva ut det som står ovan ser ut precis såhär:<br>
+								<code>&lt;h1&gt;This is heading 1&lt;/h1&gt;<br>
+								&lt;h2&gt;This is heading 2&lt;/h2&gt;<br>
+								&lt;h3&gt;This is heading 3&lt;/h3&gt;<br>
+								&lt;h4&gt;This is heading 4&lt;/h4&gt;<br>
+								&lt;h5&gt;This is heading 5&lt;/h5&gt;<br>
+								&lt;h6&gt;This is heading 6&lt;/h6&gt;<br></code>
+					<p> Taggen &lt;p&gt; definierar en paragraf. Webbläsare lägger automatiskt till ett visst utrymme (marginal) före och efter varje <p> -element. Marginalerna kan ändras med CSS (med marginalegenskaperna). Här
+						är ett exempel: <br>
+						&lt;p&gt; *den text du vill ha i paragrafen*&lt;/p&gt;<br>
+						&lt;p&gt; *den andra paragrafens innehåll*&lt;/p&gt;<br><br>
+						detta hade sett ut på följande sett i en webbläsare:<br>
+						<p>*den text du vill ha i paragrafen*</p>
+						<p>*den andra paragrafens innehåll*</p>
 
+					<p> Taggen  &lt;Pre&gt; definierar förformaterad text. Texten i ett &lt;Pre&gt; -element visas i ett bredd-fixerat typsnitt (vanligtvis Courier), och det bevarar både mellanslag och radbrytningar.<br>
+						Detta är ett exempel som inte använder &lt;br&gt; men där texten ändå skrivs ut med radbrytningar.
+					<pre>
+					Texten
+					Som
+					ligger
+					inom
+					pre-elementet
+					kan
+					direkt
+					hantera
+					t.ex.
+					radbrytningar
+					utan
+					att
+					använda
+					&lt;br&gt; </pre>
 
+					<h2>Hypertext</h2>
+					<p>Här nedanför kommer vi att gå igenom Hypertext:<code> a</code> som inkluderar: <br>
+						1.Relativ och absolut länk<br>
+						2.Länk till ankare<br>
+						3.Bild-länk<br>
+						4.Länk till olika protokoll (exempelvis ftp)<br>
+						5.Mailto-länk<br>
+						Vi börjar med absolut länk, för att göra detta använder man sig av följande kodlösning: <code> &lt;a href="https://www.w3schools.com"&gt;Visit W3Schools.com!&lt;/a&gt;</code> <br>
+						detta hade i kod sett ut enligt nedan och är en klickbar länk som tar dig till den hyperlänkade hemsidan i detta fall: https://www.w3schools.com <br><br>
+						<a href="https://www.w3schools.com">Visit W3Schools.com!</a> <br><br>
+						Vill man istället länka till ett annat htmldokument kan man använda sig av följande kodsnutt:<br>
+						<code>&lt;a href="/testsida.html"&gt;Testsida&lt;/a&gt;</code><br>
+						och hade då sett ut enligt nedan:<br>
+						<a href="testsida.html">Testsida</a>
+						För att länka till ett bestämt ställe i ett html-dokument använder man sig av vad som kallas för ankare eller anchor som det heter på engelska.<br>
+						detta görs på följande sätt: <br>
+						<code> &lt;a id = "textaggar"&gt;Texttaggar&lt;/a&gt;</code> <br>
+							i dett fall har jag placerat ett ankare vid texttaggarna en bit upp klicka på hyperlänken nedanför för att testa:
+							<a href="#textaggar">Texttaggar</a><br><br>
+							Vill man istället använda en bild som hyperlänk använder man sig av en <code>img</code>-href enligt följande exempel: <br>
+							<code>&lt;a href="https://www.w3schools.com"&gt;
+							&lt;img border="0" alt="W3Schools" src="https://www.w3schools.com/tags/logo_w3s.gif" width="100" height="100"&gt;
+							&lt;/a&gt;</code><br><br>
+							detta hade då sett ut som nedan bildlänk:<br>
+							<a href="https://www.w3schools.com">
+							<img border="0" alt="W3Schools" src="https://www.w3schools.com/tags/logo_w3s.gif" width="100" height="100">
+							</a>
+							<br><br>
+							Vill man maila någon kan man skapa en hyperlänk som kallas för mailto och kan se ut enligt nedan där man mailar someone@example.com med ämnet "Hej igen" för att skapa mellanslag använder man %20 istället för ett blanksteg.<br><br>
 
-			</html>
+							&lt;a href="mailto:someone@example.com?Subject=Hej%20igen"&gt;Skicka ett mail&lt;/a&gt;<br><br>
+							detta hade då sett ut enligt nedan och är klickbar:<br><br>
+							<a href="mailto:someone@example.com?Subject=Hej%20igen">Skicka ett mail</a>
+						</p>
+
+						<h2>Listor</h2>
+						<p>Taggen <code>&lt;dl&gt;</code> definierar en beskrivningslista och används på följande sätt tillsammans med <code>&lt;dd&gt;</code> och <code>&lt;dt&gt;</code> :<br><br>
+						<code>&lt;dl&gt;<br>
+  					&lt;dt&gt;Coffee&lt;/dt&gt;<br>
+  					&lt;dd&gt;Black hot drink&lt;/dd&gt;<br>
+  					&lt;dt&gt;Milk&lt;/dt&gt;<br>
+  					&lt;dd&gt;White cold drink&lt;/dd&gt;<br>
+						&lt;/dl&gt;<br></code><br><br>
+
+						hade sett ut på följande vis på en sida där dltaggen skapar själva listan och därefter dt-tags som är termer som ska vara med i listan och dd-tags som innehåller informationen/beskrivningen om de specifika dt-taggsen:
+						<dl>
+					  <dt>Coffee</dt>
+					  <dd>Black hot drink</dd>
+					  <dt>Milk</dt>
+					  <dd>White cold drink</dd>
+					</dl><br>
+						utöver dl-listor så finns både "ordered"-listor och "unordered"-listor <code>&lt;ol&gt;</code> och <code>&lt;ul&gt;</code> som inuti sig har list items <code>&lt;li&gt;</code> <br><br>
+						<code>&lt;ol&gt;<br>
+					  &lt;li&gt;Coca-cola&lt;/li&gt;<br>
+					  &lt;li&gt;Fanta&lt;/li&gt;<br>
+					  &lt;li&gt;Sprite&lt;/li&gt;<br>
+						&lt;/ol&gt;<br><br></code>
+						Hade varit en ordered list som sett ut på följande vis:
+						<ol>
+						<li>Coca-cola</li>
+					  <li>Fanta</li>
+					  <li>Sprite</li>
+						</ol>
+						Tittar man istället på en undordered list med samma innehåll får man följande resultat:<br>
+						<ul>
+						<li>Coca-cola</li>
+					  <li>Fanta</li>
+					  <li>Sprite</li>
+						</ul>
+						</p>
+						<h2>Tabeller</h2>
+						<p>Här ska vi kika på tabeller och taggarna: caption, table, td, th och tr.<br>
+							En HTML-tabell består av &lt;table&gt;-elementet som är själva tabellen som sedan innehåller en eller flera &lt;tr&gt;, &lt;th&gt; och &lt;td&gt; -element. Taggen &lt;caption&gt; definierar en tabelltext. Taggen &lt;caption&gt;
+							måste infogas omedelbart efter &lt;table&gt; -taggen. Vi kan passa på att göra en och samma tabell som beskriver samtliga taggar som ska gås igenom i denna del.<br><br>
+						<table>
+					  <caption>Monthly savings</caption>
+					  <tr>
+					  <th>Month</th>
+					  <th>Savings</th>
+					  </tr>
+					  <tr>
+					  <td>January</td>
+						<td>$100</td>
+					  </tr>
+						</table><br><br>
+						i denna tabell är alltså "Montly savings" denna tabells caption-tagg som ger en överskrift på tabellen och därefter har vi tr-taggen som skapar en rad i tabellen, i exempelvis den första tr-taggen bör man ha en th-tagg som är
+						en rubrikstagg i detta exempel har vi därför "Month" och "Savings" som varsina rubriktaggar. Efter detta har vi en till rad med tr-taggen som istället för att innehålla en rubrikstagg så har den en s.k. standardtagg td-tagg i
+						denna tagg läggs det som ska va i standardcellerna på efterföljande rad. i detta fall har vi januari och 100$ på raden efter rubrikerna i tabellen. Detta i kod ser ut på följande vis:<br><br>
+						&lt;table&gt;<br>
+					  &lt;caption&gt;Monthly savings&lt;/caption&gt;<br>
+					  &lt;tr&gt;<br>
+					  &lt;th&gt;Month&lt;/th&gt;<br>
+					  &lt;th&gt;Savings&lt;/th&gt;<br>
+					  &lt;/tr&gt;<br>
+					  &lt;tr&gt;<br>
+					  &lt;td&gt;January&lt;/td&gt;<br>
+						&lt;td&gt;$100&lt;/td&gt;<br>
+					  &lt;/tr&gt;<br>
+						&lt;/table&gt;&lt;br>&lt;br&gt;<br>
+						</p>
